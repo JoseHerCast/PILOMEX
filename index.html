@@ -43,11 +43,19 @@
         </div>
     </main>
     <script>
+        var timeout;
+        var lastTap=0;
         document.addEventListener("touchend",()=>{
+            var currentTime=new Date().getTime();
+            var tapLenght= currentTime - lastTap;
+            clearTimeout(timeout);
+            if(tapLenght<500 && tapLenght>0){
                 document.documentElement.requestFullscreen().catch((e)=>{
                 console.log(e);
             });
             console.log("Script ejecutado");
+            }
+            lastTap=currentTime;
         });
     </script>
 </body>
