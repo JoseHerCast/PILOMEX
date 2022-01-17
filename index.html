@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="./styles/desktop.css" media="screen and (min-width: 768px)">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto:wght@300;500;700&display=swap">
 </head>
-<body onload="init()">
+<body>
     <main>
         <!--Primera página-->
         <div class="main-background">
@@ -43,28 +43,11 @@
         </div>
     </main>
     <script type="text/javascript">
-        function init(){
-            window.onload(function() {
-                setTimeout(function(){
-                // This hides the address bar:
-                window.scrollTo(0, 1);
-                }, 0);
-            }
-        );
-        console.log("Debío ejecutarse el script")
-        }
+        document.addEventListener("dbclick",()=>{
+                document.documentElement.requestFullscreen().catch((e)=>{
+                console.log(e);
+            });
+        });
     </script>
-   <!--<script type="text/javascript">
-        function init(){
-            Window.addEventListener("load",function() {
-                setTimeout(function(){
-                // This hides the address bar:
-                Window.scrollTo(0, 1);
-                }, 0);
-            }
-        );
-        console.log("Debío ejecutarse el script")
-        }
-    </script>-->
 </body>
 </html>
