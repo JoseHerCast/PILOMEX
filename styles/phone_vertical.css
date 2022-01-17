@@ -3,6 +3,14 @@
     margin: 0;
     padding: 0;
 }
+:root {
+    --warmblack: #201E1C;
+    --gradblack: #000000;
+    --gradgrey: #444444;
+    --descgrey: #d9d9d9;
+    --yellow: #ffd966;
+    --white: #ffffff;
+}
 ul{
     width: max-content;
     height: auto;
@@ -17,19 +25,17 @@ a{
     cursor: pointer;
     text-decoration: none;
 }
-
-:root {
-    --warmblack: #201E1C;
-    --gradblack: #000000;
-    --gradgrey: #444444;
-    --descgrey: #d9d9d9;
-    --yellow: #ffd966;
-    --white: #ffffff;
-}
 html {
+    display: flex;
+    flex-direction: column;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    overflow-x: hidden;
+
     font-size: 62.5%;
     font-family: 'Lato', Arial, Helvetica, sans-serif;
     color: var(--gradblack);
+    
 }
 img {
     display: block;
@@ -40,11 +46,11 @@ img {
 }
 .main-background{
     display: block;
-    flex-direction: row;
     width: 100%;
     height: 100vh;
     overflow:hidden;
     background-color: var(--yellow);
+    scroll-snap-align: start;
 }
 .main-black-box-decoration{
     float: left;
@@ -56,24 +62,23 @@ img {
     background-image: linear-gradient(to bottom,var(--gradgrey) 10%,var(--gradblack) 50%);
     box-shadow: 0px 0px 5px 2px rgba(0, 0, 0,0.5);
 }
-.main-pilomex-logo-container{
+.main-pilomex-logo-container {
     float: right;
     position: relative;
     right: 0px;
     top: 5vh;
     width: 43.1%;
-    height: 14.5vh;
+    height: max-content;
     background-color: var(--white);
     /*box-shadow: 0px 0px 5px 2px rgba(0, 0, 0,0.5);*/
 }
 .main-pilomex-logo{
     position: relative;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 2px;
+    margin: auto;
+    padding-top: 5px;
     min-width: 138px;
     max-width: 158px;
-    height: 77px;
+    height: 14.5vh;
 }
 .main-white-box-decoration{
     position: relative;
@@ -93,7 +98,6 @@ img {
     width: 244px;
     height: 315px;
     background-color: orange;
-    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0,0.5);
     z-index: 1;
 }
 .main-profile-photo{
@@ -117,6 +121,7 @@ img {
     border-left: 1px solid var(--warmblack);
     border-bottom: 1px solid var(--warmblack);
     overflow: hidden;
+    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0,0.5);
 }
 .main-profile-description p{
     font-size: 1.4rem;
@@ -124,14 +129,14 @@ img {
 }
 .main-contact{
     position: absolute;
-    left: 0px;
-    bottom: 5px;
+    left: 2px;
+    bottom: 6px;
     width: 224px;
     height: 62px;
 }
 .main-about{
     position: relative;
-    bottom: 10vh;
+    bottom: 9vh;
     margin: auto;
     width: 95%;
     height: 75vh;
@@ -143,14 +148,14 @@ img {
     border-color: var(--warmblack);
     border-style: solid;
     border-width: 1px;
-    overflow: hidden;
+    overflow: scroll;
 }
 .main-about p{
-    font-size: 0.7rem;
+    font-size: 1rem;
     text-align: justify;
 }
 .main-about li{
-    font-size: 0.7rem;
+    font-size: 1rem;
 }
 a:link{
     color: var(--gradblack);   
