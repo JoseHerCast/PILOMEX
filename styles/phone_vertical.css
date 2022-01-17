@@ -52,7 +52,7 @@ img {
     position: relative;
     left: 0px;
     top: 0px;
-    width: 45.9%;
+    width: 52%;
     height: 32.2vh;
     background-image: linear-gradient(to bottom,var(--gradgrey) 10%,var(--gradblack) 50%);
     box-shadow: 3px 3px 8px 1px rgba(0, 0, 0, 0.3);
