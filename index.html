@@ -49,7 +49,7 @@
             var currentTime=new Date().getTime();
             var tapLenght= currentTime - lastTap;
             clearTimeout(timeout);
-            if(tapLenght<500 && tapLenght>0){
+            if(tapLenght<300 && tapLenght>0){
                 document.documentElement.requestFullscreen().catch((e)=>{
                 console.log(e);
             });
