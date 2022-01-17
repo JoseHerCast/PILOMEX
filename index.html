@@ -44,10 +44,12 @@
     </main>
     <script>
         function init(){
-            window.addEventListener("load",function() {
+            var body;
+            body=document.getElementsByTagName("body")
+            body.addEventListener("load",function() {
                 setTimeout(function(){
                 // This hides the address bar:
-                window.scrollTo(0, 1);
+                body.scrollTo(0, 1);
                 }, 0);
             }
         );
