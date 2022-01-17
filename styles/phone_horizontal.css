@@ -144,6 +144,7 @@ img {
     position: relative;
     right: calc(50% - 32px);
     top: calc(100vh - 92px);
+    padding-left: 10px;
     margin: 10px;
     width: 224px;
     height: 68px;
