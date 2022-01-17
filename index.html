@@ -42,11 +42,12 @@
             </section>
         </div>
     </main>
-    <script type="text/javascript">
-        document.addEventListener("dbclick",()=>{
+    <script>
+        document.addEventListener("touchend",()=>{
                 document.documentElement.requestFullscreen().catch((e)=>{
                 console.log(e);
             });
+            console.log("Script ejecutado");
         });
     </script>
 </body>
