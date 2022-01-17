@@ -44,6 +44,18 @@
     </main>
     <script type="text/javascript">
         function init(){
+            window.onload(function() {
+                setTimeout(function(){
+                // This hides the address bar:
+                window.scrollTo(0, 1);
+                }, 0);
+            }
+        );
+        console.log("Debío ejecutarse el script")
+        }
+    </script>
+   <!--<script type="text/javascript">
+        function init(){
             Window.addEventListener("load",function() {
                 setTimeout(function(){
                 // This hides the address bar:
@@ -53,6 +65,6 @@
         );
         console.log("Debío ejecutarse el script")
         }
-    </script>
+    </script>-->
 </body>
 </html>
