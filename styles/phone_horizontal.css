@@ -47,7 +47,7 @@ img {
 .main-black-box-decoration{
     float: left;
     position: absolute;
-    right: 0px;
+    left: 0px;
     top: 0px;
     width: 75%;
     height: 32.2vh;
@@ -58,8 +58,8 @@ img {
     float: left;
     text-align: center;
     position: absolute;
-    right: 0px;
-    top: 36vh;
+    right: 60px;
+    top: 38vh;
     width: 43.1%;
     height: max-content;
     background-color: var(--white);
@@ -75,7 +75,7 @@ img {
 }
 .main-profile{
     position: absolute;
-    left: 20px;
+    left: 40px;
     top: 6vh;
     width: 224px;
     height: 295px;
@@ -114,7 +114,7 @@ img {
     display: flex;
     flex-direction: column;
     position: absolute;
-    right: 0px;
+    right: 110px;
     bottom: 40px;
     padding-left: 10px;
     margin: 10px;
