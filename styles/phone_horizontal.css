@@ -115,6 +115,7 @@ img {
     height: 10vh;
     padding-top: 4px;
     background-color: var(--white);
+    z-index: 2;
 }
 .footer-logo-container img{
     display: block;
