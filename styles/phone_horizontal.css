@@ -1,0 +1,142 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --warmblack: #201E1C;
+    --gradblack: #000000;
+    --gradgrey: #444444;
+    --descgrey: #d9d9d9;
+    --yellow: #ffd966;
+    --white: #ffffff;
+}
+ul{
+    width: 100%;
+    height: 100%;
+    list-style-type: none;
+}
+li{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+a{
+    cursor: pointer;
+    text-decoration: none;
+}
+html {
+    font-size: 62.5%;
+    font-family: 'Lato', Arial, Helvetica, sans-serif;
+    color: var(--gradblack);
+    
+}
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    height: auto;
+}
+.background{
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow:hidden;
+    background-color: var(--yellow);
+}
+.main-black-box-decoration{
+    float: left;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 75%;
+    height: 32.2vh;
+    border-radius: 5px;
+    background-image: linear-gradient(to bottom,var(--gradgrey) 10%,var(--gradblack) 50%);
+    box-shadow: 0px 0px 5px 2px rgba(0, 0, 0,0.5);
+}
+.main-pilomex-logo-container{
+    float: left;
+    text-align: center;
+    position: absolute;
+    right: 60px;
+    top: 38vh;
+    width: 43.1%;
+    height: max-content;
+    border-radius: 5px;
+    background-color: var(--white);
+    box-shadow: 3px 3px 8px 1px rgba(0, 0, 0, 0.3);
+}
+.main-pilomex-logo{
+    position: relative;
+    margin: auto;
+    padding-top: 5px;
+    min-width: 138px;
+    max-width: 158px;
+    height: 22vh;
+}
+.main-profile{
+    position: absolute;
+    left: 40px;
+    top: 6vh;
+    width: 224px;
+    height: 295px;
+    background-color: orange;
+    box-shadow: 3px 3px 8px 1px rgba(0, 0, 0, 0.3);
+
+    z-index: 1;
+}
+.main-profile-photo{
+    position: relative;
+    top: 0px;
+    width: 100%;
+    height: 250px;
+    background-color:  var(--warmblack);
+    border-style: solid;
+    border-width: 3px;
+    border-color: var(--warmblack);
+}
+.main-profile-description{
+    position: relative;
+    bottom: 20px;
+    width: 100%;
+    height: 65px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: var(--descgrey);
+    border-right: 1px solid var(--warmblack);
+    border-left: 1px solid var(--warmblack);
+    border-bottom: 1px solid var(--warmblack);
+    overflow: hidden;
+}
+.main-profile-description p{
+    font-size: 1.2rem;
+    text-align: center;
+}
+.main-contact{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 100px;
+    bottom: 20px;
+    padding: 4px 0px;
+    padding-left: 10px;
+    margin: 10px;
+    width: 224px;
+    height: 72px;
+    color: var(--descgrey);
+    background-color: var(--gradgrey);
+    border-radius: 5px;
+}
+a:link{
+    color: var(--descgrey);   
+}
+a:visited{
+    color: var(--descgrey);
+}
+a:hover{
+    color: var(--descgrey);
+}
