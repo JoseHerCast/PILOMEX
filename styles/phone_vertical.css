@@ -108,9 +108,9 @@ img {
     align-items: center;
     justify-content: center;
     position: absolute;
-    bottom: 15vh;
-    left: calc(50% - 100px);
-    width: 200px;
+    bottom: 20vh;
+    left: calc(50% - 110px);
+    width: 220px;
     height: 100px;
     font-size: 1.4rem;
     text-align: center;
