@@ -1,25 +1,29 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <link rel="shortcut icon" href="../img/fabicon.png">
     <meta name="robots" content="index,follow">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Credencial</title>
-    <link rel="stylesheet" href="../css/credential_phonev.css" media="screen and (orientation: portrait)">
-    <link rel="stylesheet" href="../css/credential_phoneh.css" media="screen and (orientation: landscape)">
-    <link rel="stylesheet" href="../css/credential_desktop.css" media="screen and (min-width: 768px)">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto:wght@300;500;700&display=swap">
+    <link rel="stylesheet" href="./styles/phone_vertical.css" media="screen and (orientation: portrait)">
+    <link rel="stylesheet" href="./styles/phone_horizontal.css" media="screen and (orientation: landscape)">
+    <link rel="stylesheet" href="./styles/desktop.css" media="screen and (min-width: 768px)">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto:wght@300;500;700&display=swap">
 </head>
+
 <body class="background">
     <header>
         <div class="header-image-container">
-            <img src="../img/Pilomex-3-min.jpg" alt="Imagen de fondo para el header, relacionada directamente al negocio">
+            <img src="./assets/imgs/Pilomex-3-min.jpg"
+                alt="Imagen de fondo para el header, relacionada directamente al negocio">
         </div>
     </header>
     <main>
         <div class="main-profile-photo-container">
-            <img src="../img/employees/004.png" alt="Imagen correspondiente al usuario">
+            <img src="./assets/imgs/profile_photo.png" alt="Imagen correspondiente al usuario">
         </div>
         <section class="main-profile-information">
             <h1 class="main-profile-information-title">
@@ -30,7 +34,7 @@
             </p>
         </section>
         <div class="main-decoration">
-            <img src="../img/bckgrnd.svg" alt="Imagen de decoración">
+            <img src="./assets/imgs/Vector_2.svg" alt="Imagen de decoración">
         </div>
         <section class="main-contact">
             <p>Número de empleado: 004</p>
@@ -41,25 +45,26 @@
     </main>
     <footer>
         <div class="footer-logo-container">
-            <img src="../img/pilomex_c.png" alt="Imagen logotipo de la empresa">
+            <img src="./assets/imgs/Pilomex.png" alt="Imagen logotipo de la empresa">
         </div>
     </footer>
     <!--Pequeño script para detectar un doble toque en pantalla-->
     <script>
         var timeout;
-        var lastTap=0;
-        document.addEventListener("touchend",()=>{
-            var currentTime=new Date().getTime();
-            var tapLenght= currentTime - lastTap;
+        var lastTap = 0;
+        document.addEventListener("touchend", () => {
+            var currentTime = new Date().getTime();
+            var tapLenght = currentTime - lastTap;
             clearTimeout(timeout);
-            if(tapLenght<300 && tapLenght>0){
-                document.documentElement.requestFullscreen().catch((e)=>{
-                console.log(e);
-            });
-            console.log("Script ejecutado");
+            if (tapLenght < 300 && tapLenght > 0) {
+                document.documentElement.requestFullscreen().catch((e) => {
+                    console.log(e);
+                });
+                console.log("Script ejecutado");
             }
-            lastTap=currentTime;
+            lastTap = currentTime;
         });
     </script>
 </body>
+
 </html>
